@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anytime Home Comfort | HVAC Installation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet"/>
 </head>
-<body><h1>My Website is Under Construction</h1>
-    
-</body>
-</html>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="Anytime Home Comfort Logo" />
+        <span>Anytime Home Comfort</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="btn-nav">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">🔥 Serving Ottawa & Growing Across North America</p>
+      <h1>HVAC Installation<br/><span>Made Simple.</span></h1>
+      <p class="hero-sub">Best prices. Verified installers. Fast turnaround. We handle everything so you don't have to.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Get My Free Quote</a>
+        <a href="#calculator" class="btn-secondary">Estimate My Cost</a>
+      </div>
+      <div class="hero-badges">
+        <span>✅ Licensed & Insured</span>
+        <span>✅ Financing Available</span>
+        <span>✅ Government Rebates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFERS BANNER -->
+  <section class="offers-banner" id="offers">
+    <div class="offers-container">
+      <div class="offer-card">
+        <h3>💰 Up to $5,000</h3>
+        <p>in Government Grants & Rebates available for qualifying systems</p>
+      </div>
+      <div class="offer-card">
+        <h3>📅 0% Financing</h3>
+        <p>Flexible payment plans — no interest for up to 18 months</p>
+      </div>
+      <div class="offer-card">
+        <h3>🎁 Referral Rewards</h3>
+        <p>Refer a friend and earn $200 credit toward your next service</p>
+      </div>
+      <div class="offer-card">
+        <h3>⭐ Review Rewards</h3>
+        <p>Leave a verified review and get a $50 service credit</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-container">
+      <h2>How It Works</h2>
+      <p class="section-sub">Three simple steps to a comfortable home</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Get Your Quote</h3>
+          <p>Fill out our quick form or use our cost calculator. We'll reach out within the hour.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>We Match You</h3>
+          <p>We connect you with a top-rated, verified installer in your area — no guesswork.</p>
+        </div>
+        <div class="step-divider">→</div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Job Done & Guaranteed</h3>
+          <p>Your system is installed professionally. We follow up to make sure you're 100% happy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COST CALCULATOR -->
+  <section class="calculator" id="calculator">
+    <div class="section-container">
+      <h2>Estimate Your Cost</h2>
+      <p class="section-sub">Get a ballpark figure in seconds — no commitment required</p>
+      <div class="calc-box">
+        <div class="calc-field">
+          <label>Home Size</label>
+          <select id="homeSize">
+            <option value="">Select size</option>
+            <option value="small">Under 1,000 sq ft</option>
+            <option value="medium">1,000 – 2,000 sq ft</option>
+            <option value="large">2,000 – 3,500 sq ft</option>
+            <option value="xlarge">3,500+ sq ft</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label>System Type</label>
+          <select id="systemType">
+            <option value="">Select system</option>
+            <option value="ac">Central Air Conditioner</option>
+            <option value="furnace">Gas Furnace</option>
+            <option value="heatpump">Heat Pump</option>
+            <option value="combo">Full Combo System</option>
+          </select>
+        </div>
+        <button class="btn-primary" onclick="calculateCost()">Calculate</button>
+        <div class="calc-result" id="calcResult"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section class="trust">
+    <div class="section-container">
+      <h2>Why Homeowners Choose Us</h2>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <span>🏆</span>
+          <h3>Top-Rated Installers</h3>
+          <p>Every installer in our network is vetted, licensed, and ranked by real customer reviews.</p>
+        </div>
+        <div class="trust-card">
+          <span>💲</span>
+          <h3>Best Price Guarantee</h3>
+          <p>We work directly with top suppliers to get you the best equipment at the lowest price.</p>
+        </div>
+        <div class="trust-card">
+          <span>📋</span>
+          <h3>Government Rebates</h3>
+          <p>We help you navigate available grants and rebates so you never leave money on the table.</p>
+        </div>
+        <div class="trust-card">
+          <span>🔒</span>
+          <h3>Satisfaction Guaranteed</h3>
+          <p>We follow up after every install. If something's not right, we make it right.</p>
+        </div>
+        <div class="trust-card">
+          <span>⚡</span>
+          <h3>Fast Turnaround</h3>
+          <p>Most installs are scheduled within days, not weeks. We know comfort can't wait.</p>
+        </div>
+        <div class="trust-card">
+          <span>🌎</span>
+          <h3>Growing Network</h3>
+          <p>Starting in Ottawa and expanding across North America — always a local expert near you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="section-container">
+      <h2>What Our Customers Say</h2>
+      <p class="section-sub">Real reviews from real homeowners</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Incredibly smooth process from start to finish. Got my heat pump installed in 2 days. Couldn't be happier!"</p>
+          <span>— Sarah M., Ottawa</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"They helped me get a $3,200 rebate I didn't even know I qualified for. Saved me a ton of money."</p>
+          <span>— James T., Ottawa</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Professional, fast, and the pricing was very fair. The installer they sent was top notch."</p>
+          <span>— Linda K., Ottawa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2>Get Your Free Quote</h2>
+      <p class="section-sub">Fill out the form below and we'll get back to you within the hour</p>
+      <form class="lead-form" action="mailto:Info@anytimehomecomfort.com" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-row">
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="text" name="city" placeholder="Your City" required />
+        </div>
+        <select name="service" required>
+          <option value="">What do you need?</option>
+          <option>Air Conditioner Installation</option>
+          <option>Furnace Installation</option>
+          <option>Heat Pump Installation</option>
+          <option>Full System Replacement</option>
+          <option>Not Sure — Need Advice</option>
+        </select>
+        <textarea name="message" placeholder="Any additional details? (optional)" rows="4"></textarea>
+        <button type="submit" class="btn-primary btn
